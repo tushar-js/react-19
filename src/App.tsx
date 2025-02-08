@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router";
-import HomePage from "./pages/home/home-page.tsx";
-import AboutPage from "./pages/about/about-page.tsx";
-import NotFoundPage from "./pages/not-found/not-found-page.tsx";
+import HomePage from "./pages/home/home-page";
+import AboutPage from "./pages/about/about-page";
+import NotFoundPage from "./pages/not-found/not-found-page";
 
 function App() {
     return (

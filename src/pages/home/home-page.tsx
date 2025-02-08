@@ -1,6 +1,4 @@
-import React from "react";
-import { Link } from "react-router";
-import VerticalMenu from "./vetical-menu.tsx";
+import VerticalMenu from "./vetical-menu";
 
 const HomePage = () => {
     return (
