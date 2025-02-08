@@ -5,9 +5,10 @@ import {
     ListItemText,
     Divider,
 } from "@mui/material";
+import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import ContactMailIcon from "@mui/icons-material/ContactMail";
+import LoginIcon from "@mui/icons-material/Login";
 import { Link } from "react-router-dom";
 
 export default function VerticalMenu() {
@@ -35,12 +36,22 @@ export default function VerticalMenu() {
 
             <ListItemButton
                 component={Link}
-                to='/contact'
+                to='/sign-in'
             >
                 <ListItemIcon>
-                    <ContactMailIcon />
+                    <LoginIcon />
                 </ListItemIcon>
-                <ListItemText primary='Contact' />
+                <ListItemText primary='Sign In' />
+            </ListItemButton>
+
+            <ListItemButton
+                component={Link}
+                to='/sign-up'
+            >
+                <ListItemIcon>
+                    <AppRegistrationIcon />
+                </ListItemIcon>
+                <ListItemText primary='Sign Up' />
             </ListItemButton>
 
             <Divider />
